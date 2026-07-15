@@ -21,13 +21,31 @@
   <script src="https://f.convertkit.com/ckjs/ck.5.js" defer></script>
   <title>The Future That Never Was — Arcopolis Studio</title>
 </head>
-<body>
+<body class="home-body">
+  <div class="crt-mask" aria-hidden="true"></div>
+  <svg class="dead-tech-glass" viewBox="0 0 1600 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <g class="glass-radiation" id="glass-radiation">
+      <g class="glass-main">
+        <path d="M0 0 -50-63 -116-95 -183-191 -295-235 -420-356"/>
+        <path d="M0 0 74-43 131-115 248-143 326-243 482-287"/>
+        <path d="M0 0 95 12 171-43 286-26 374-100 521-83"/>
+        <path d="M0 0 63 80 159 107 203 218 330 278 402 408"/>
+        <path d="M0 0 -40 89 -125 136 -162 239 -278 300 -351 433"/>
+        <path d="M0 0 -105 17 -168 91 -293 71 -381 148 -526 158"/>
+        <path d="M0 0 -26-104 42-177 6-294 89-377 72-522"/>
+      </g>
+      <g class="glass-branches">
+        <path d="M-116-95 -96-166 -140-216M-183-191 -249-187 -287-248M131-115 135-193 198-240M248-143 322-131 357-192M171-43 207 33 290 53M203 218 169 286 226 342M159 107 80 149 67 223M-125 136 -101 212 -159 261M-278 300 -354 286 -409 346M-168 91 -241 118 -288 78M-293 71 -314-7 -385-41M-26-104 -91-147 -80-220M42-177 111-226 106-293"/>
+      </g>
+    </g>
+  </svg>
   <div class="page-noise" aria-hidden="true"></div>
+  <audio id="ambient-audio" src="assets/audio/arcopolis-tease-01.wav" preload="auto" autoplay loop></audio>
   <a class="skip-link" href="#signal-entry">Skip to signal entry</a>
 
   <header class="site-header">
     <a class="brand" href="/" aria-label="Arcopolis Studio home">
-      <span class="brand-main">ARCOPOLIS</span>
+      <span class="brand-main"><span class="brand-glyph" aria-hidden="true">◇</span><span class="brand-letter" style="--flicker: 0s">A</span><span class="brand-letter" style="--flicker: -3.1s">R</span><span class="brand-letter" style="--flicker: -6.7s">C</span><span class="brand-letter" style="--flicker: -1.8s">O</span><span class="brand-letter" style="--flicker: -8.4s">P</span><span class="brand-letter" style="--flicker: -4.6s">O</span><span class="brand-letter" style="--flicker: -10.2s">L</span><span class="brand-letter" style="--flicker: -2.5s">I</span><span class="brand-letter" style="--flicker: -7.3s">S</span><span class="brand-glyph" aria-hidden="true">◇</span></span>
       <span class="brand-sub">STUDIO // PUBLIC SIGNAL</span>
     </a>
     <span class="transmission-state"><i aria-hidden="true"></i> RECEIVING</span>
@@ -37,15 +55,26 @@
     <section class="signal-hero" id="signal-entry">
       <div class="signal-copy">
         <p class="eyebrow">PUBLIC SIGNAL // ENTRY 000</p>
-        <h1>THE FUTURE<br>THAT NEVER WAS<br><span>IS LOOKING FOR WITNESSES.</span></h1>
+        <h1>THE FUTURE<br>THAT NEVER WAS<br><span>IS LOOKIN<span class="pupil-anchor">G</span> FOR WITNESSES.</span></h1>
         <p class="lede">The Archivist does not predict the future. He catalogs evidence that it already happened.</p>
+        <div class="relic-signal" aria-hidden="true">
+          <svg viewBox="0 0 72 24" focusable="false"><path d="M2 12h14l6-8 6 8-6 8-6-8M35 4l8 8-8 8M51 4l8 8-8 8M67 12h3"/></svg>
+          <span>RELIC MARK // A-47</span>
+          <span>0x0001</span>
+        </div>
       </div>
 
-      <aside class="entry-panel" aria-labelledby="entry-title">
-        <div class="panel-label">ARCHIVE INTAKE // OPEN</div>
-        <p class="file-number">FILE 00—UNASSIGNED</p>
-        <h2 id="entry-title">LEAVE AN ADDRESS.</h2>
-        <p>When the archive opens, the first letter will find you.</p>
+      <div class="entry-stack">
+        <div class="entry-marks" aria-hidden="true">
+          <svg viewBox="0 0 138 26" focusable="false"><path d="M4 13 13 4l9 9-9 9-9-9M34 4v18M25 13h18M57 4l8 18 8-18M86 4l9 9-9 9-9-9M112 13h22M123 4v18"/></svg>
+          <span>RLC // 47</span>
+        </div>
+        <aside class="entry-panel" aria-labelledby="entry-title">
+        <div class="panel-label">UNLISTED PROTOCOL // ACTIVE</div>
+        <p class="file-number">IDENTITY // WITHHELD</p>
+        <h2 id="entry-title">BECOME UNLISTED.</h2>
+        <p>Leave a signal address. Public record: null. The Archivist will return with your first field assignment.</p>
+        <div class="protocol-fragment" aria-hidden="true"><span>SYS::UNLISTED</span><i></i><span>CASE_47-090</span></div>
 
         <form
           class="signal-form seva-form formkit-form"
@@ -56,36 +85,36 @@
           data-uid="5a1fa94350"
           data-format="inline"
           data-version="5"
-          data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;&gt; ENTRY_ACCEPTED // MONITOR YOUR INBOX. THE ARCHIVIST HAS ACKNOWLEDGED THE SIGNAL.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;}},&quot;version&quot;:&quot;5&quot;}"
+          data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;&gt; ACCESS_GRANTED // YOU_ARE_NOW_UNLISTED. MONITOR YOUR INBOX.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;}},&quot;version&quot;:&quot;5&quot;}"
         >
-          <label for="email-address">EMAIL ADDRESS</label>
+          <label for="email-address">SIGNAL ADDRESS</label>
           <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert" role="alert"></ul>
           <div class="form-row seva-fields formkit-fields" data-element="fields" data-stacked="false">
             <div class="formkit-field">
-              <input class="formkit-input" id="email-address" name="email_address" type="email" autocomplete="email" inputmode="email" aria-label="Email Address" placeholder="WITNESS@EXAMPLE.COM" required>
+              <input class="formkit-input" id="email-address" name="email_address" type="email" autocomplete="email" inputmode="email" aria-label="Email Address" placeholder="AGENT@EXAMPLE.COM" required>
             </div>
             <button class="formkit-submit" data-element="submit" type="submit">
-              <span>JOIN THE SIGNAL</span>
+              <span>BECOME UNLISTED</span>
             </button>
           </div>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
 
-        <p class="privacy-note">One address. One letter. No noise. Unsubscribe at any time. Email delivery by <a href="https://kit.com/" rel="nofollow noopener">Kit</a>.</p>
-      </aside>
+        <p class="privacy-note">One address. One transmission. No noise. Unsubscribe at any time. Email delivery by <a href="https://kit.com/" rel="nofollow noopener">Kit</a>.</p>
+        </aside>
+        <div class="entry-angles" aria-hidden="true">
+          <svg viewBox="0 0 220 26" focusable="false"><path d="M4 4 15 13 4 22M24 4l11 9-11 9M48 13h24M82 4l11 9-11 9M102 4l11 9-11 9M126 13h22M158 4l11 9-11 9M178 4l11 9-11 9M202 13h14"/></svg>
+        </div>
+      </div>
     </section>
 
     <section class="archive-fragment" aria-label="Recovered archive fragment">
-      <p>RECOVERED NOTE // AUTHOR UNKNOWN</p>
-      <blockquote>“If this reached you, the future has already begun remembering itself.”</blockquote>
-      <span>— THE ARCHIVIST</span>
+      <p>UNLISTED TRANSMISSION // FILE 47-090</p>
+      <blockquote>“The future was never lost. It was only marked unavailable.”</blockquote>
+      <span>ARCHIVIST // VERIFIED</span>
+      <button class="audio-control" id="audio-control" type="button" aria-pressed="false" aria-label="Enable ambient transmission audio">AUDIO // STANDBY</button>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <span>ARCOPOLIS.STUDIO</span>
-    <span>DFW NODE // <span id="year"></span></span>
-  </footer>
 
   <script src="script.js"></script>
 </body>
