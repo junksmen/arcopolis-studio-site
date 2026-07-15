@@ -21,8 +21,10 @@
   <script src="https://f.convertkit.com/ckjs/ck.5.js" defer></script>
   <title>The Future That Never Was — Arcopolis Studio</title>
 </head>
-<body class="home-body">
-  <div class="crt-mask" aria-hidden="true"></div>
+  <body class="home-body">
+    <div class="crt-mask" aria-hidden="true"></div>
+    <div class="top-film-strip" aria-hidden="true"></div>
+    <div class="destroyed-monitor" aria-hidden="true"></div>
   <svg class="dead-tech-glass" viewBox="0 0 1600 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
     <g class="glass-radiation" id="glass-radiation">
       <g class="glass-main">
@@ -39,13 +41,18 @@
       </g>
     </g>
   </svg>
+  <svg class="haze-lightning" viewBox="0 0 1600 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <g class="haze-strike haze-strike-a"><path d="M38 134 292 218l-110 59 287 106-132 74 376 99"/><path d="M292 218 338 117M469 383l105-101M757 556 913 480"/></g>
+    <g class="haze-strike haze-strike-b"><path d="M1553 148 1286 256l121 70-310 94 154 76-362 124"/><path d="M1286 256 1224 151M1097 420l-103-95M889 620 741 548"/></g>
+    <g class="haze-strike haze-strike-c"><path d="M814 26 759 211l80 64-118 158 74 99-121 187"/><path d="M759 211 601 152M721 433 570 470M795 532 949 597"/></g>
+  </svg>
   <div class="page-noise" aria-hidden="true"></div>
   <audio id="ambient-audio" src="assets/audio/arcopolis-tease-01.wav" preload="auto" autoplay loop></audio>
   <a class="skip-link" href="#signal-entry">Skip to signal entry</a>
 
   <header class="site-header">
     <a class="brand" href="/" aria-label="Arcopolis Studio home">
-      <span class="brand-main"><span class="brand-glyph" aria-hidden="true">◇</span><span class="brand-letter" style="--flicker: 0s">A</span><span class="brand-letter" style="--flicker: -3.1s">R</span><span class="brand-letter" style="--flicker: -6.7s">C</span><span class="brand-letter" style="--flicker: -1.8s">O</span><span class="brand-letter" style="--flicker: -8.4s">P</span><span class="brand-letter" style="--flicker: -4.6s">O</span><span class="brand-letter" style="--flicker: -10.2s">L</span><span class="brand-letter" style="--flicker: -2.5s">I</span><span class="brand-letter" style="--flicker: -7.3s">S</span><span class="brand-glyph" aria-hidden="true">◇</span></span>
+      <span class="brand-main"><span class="brand-film-swoosh" aria-hidden="true"></span><span class="brand-glyph" aria-hidden="true">◇</span><span class="brand-letter" style="--flicker: 0s">A</span><span class="brand-letter" style="--flicker: -3.1s">R</span><span class="brand-letter" style="--flicker: -6.7s">C</span><span class="brand-letter" style="--flicker: -1.8s">O</span><span class="brand-letter" style="--flicker: -8.4s">P</span><span class="brand-letter" style="--flicker: -4.6s">O</span><span class="brand-letter" style="--flicker: -10.2s">L</span><span class="brand-letter" style="--flicker: -2.5s">I</span><span class="brand-letter" style="--flicker: -7.3s">S</span><span class="brand-glyph" aria-hidden="true">◇</span></span>
       <span class="brand-sub">STUDIO // PUBLIC SIGNAL</span>
     </a>
     <span class="transmission-state"><i aria-hidden="true"></i> RECEIVING</span>
@@ -57,6 +64,11 @@
         <p class="eyebrow">PUBLIC SIGNAL // ENTRY 000</p>
         <h1>THE FUTURE<br>THAT NEVER WAS<br><span>IS LOOKIN<span class="pupil-anchor">G</span> FOR WITNESSES.</span></h1>
         <p class="lede">The Archivist does not predict the future. He catalogs evidence that it already happened.</p>
+        <div class="signal-chips" aria-label="Signal status">
+          <span class="signal-chip"><i aria-hidden="true"></i>SIGNAL // LIVE</span>
+          <span class="signal-chip signal-chip-alt">RELIC // SYNC</span>
+          <button class="audio-control" id="audio-control" type="button" aria-pressed="false" aria-label="Enable ambient transmission audio">AUDIO // STANDBY</button>
+        </div>
         <div class="relic-signal" aria-hidden="true">
           <svg viewBox="0 0 72 24" focusable="false"><path d="M2 12h14l6-8 6 8-6 8-6-8M35 4l8 8-8 8M51 4l8 8-8 8M67 12h3"/></svg>
           <span>RELIC MARK // A-47</span>
@@ -112,7 +124,6 @@
       <p>UNLISTED TRANSMISSION // FILE 47-090</p>
       <blockquote>“The future was never lost. It was only marked unavailable.”</blockquote>
       <span>ARCHIVIST // VERIFIED</span>
-      <button class="audio-control" id="audio-control" type="button" aria-pressed="false" aria-label="Enable ambient transmission audio">AUDIO // STANDBY</button>
     </section>
   </main>
 

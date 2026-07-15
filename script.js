@@ -6,6 +6,7 @@ const audioControl = document.querySelector('#audio-control');
 const glass = document.querySelector('.dead-tech-glass');
 const glassRadiation = document.querySelector('#glass-radiation');
 const pupilAnchor = document.querySelector('.pupil-anchor');
+const phosphorTargets = document.querySelectorAll('.transmission-state, .signal-chip, .signal-chips .audio-control');
 
 const alignGlassRadiation = () => {
   if (!glass || !glassRadiation || !pupilAnchor) return;
@@ -18,6 +19,18 @@ const alignGlassRadiation = () => {
 
 alignGlassRadiation();
 window.addEventListener('resize', alignGlassRadiation);
+
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const flashPhosphor = () => {
+  if (reducedMotion || !phosphorTargets.length) return;
+  const target = phosphorTargets[Math.floor(Math.random() * phosphorTargets.length)];
+  target.classList.add('phosphor-flash');
+  window.setTimeout(() => target.classList.remove('phosphor-flash'), 100 + Math.random() * 340);
+  window.setTimeout(flashPhosphor, 350 + Math.random() * 2600);
+};
+
+flashPhosphor();
 
 if (ambientAudio && audioControl) {
   ambientAudio.volume = 0.42;
