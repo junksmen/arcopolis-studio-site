@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /vault/
+Sitemap: https://arcopolis.studio/sitemap.xml

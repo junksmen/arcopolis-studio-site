@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070708">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Archivist Access — Arcopolis Studio</title>
+</head>
+<body class="vault-body">
+  <main class="vault-panel">
+    <p class="panel-label">RESTRICTED FILE // LOCAL DECRYPTION</p>
+    <p class="eyebrow">AUTHORIZED RECIPIENTS ONLY</p>
+    <h1>ARCHIVIST<br>PROFESSIONAL FILE</h1>
+    <p>The file is encrypted. Its key was transmitted separately.</p>
+
+    <form class="vault-form" id="vault-form">
+      <label for="vault-key">ACCESS PHRASE</label>
+      <input id="vault-key" type="password" autocomplete="off" required>
+      <button type="submit">DECRYPT FILE</button>
+      <p class="form-status" id="vault-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <script src="vault.js"></script>
+</body>
+</html>
